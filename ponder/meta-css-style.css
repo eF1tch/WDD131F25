@@ -1,0 +1,35 @@
+body{
+    text-align: center;   
+    background-color: #dcdcdc;       
+}
+#content {
+  border: 2px solid #bebebe;
+  margin: 20px auto;
+  padding: 5%;
+  width: 50%;
+}
+hr {
+    color: #0a5b9a;
+    background-color: #0a5b9a;
+    width: 75%;
+    height: 2px;
+}
+img {
+  width: 45%;
+  height: auto;    
+  display: block;  
+  margin: 0 auto; 
+}
+p{
+    color: #0a5b9a;
+}
+h2{
+    width: 50%;
+    margin: 1% auto;
+    text-align: center;
+}
+.list {
+  width: 50%;      
+  margin: 0 auto;  
+  text-align: left; 
+}
