@@ -1,0 +1,22 @@
+body{
+    margin: 0 auto;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+header {
+    text-align: center;
+    text-transform: uppercase;
+}
+.blue{
+    color: #368bc5;
+    letter-spacing: 3px;
+}
+footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+footer img {
+    max-width: 25%;
+    height: auto;
+}
