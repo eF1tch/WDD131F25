@@ -1,6 +1,6 @@
 body{
-    text-align: center;   
-    background-color: #dcdcdc;       
+  text-align: center;   
+  background-color: #dcdcdc;       
 }
 #content {
   border: 2px solid #bebebe;
@@ -9,10 +9,10 @@ body{
   width: 50%;
 }
 hr {
-    color: #0a5b9a;
-    background-color: #0a5b9a;
-    width: 75%;
-    height: 2px;
+  color: #0a5b9a;
+  background-color: #0a5b9a;
+  width: 75%;
+  height: 2px;
 }
 img {
   width: 45%;
@@ -24,9 +24,9 @@ p{
     color: #0a5b9a;
 }
 h2{
-    width: 50%;
-    margin: 1% auto;
-    text-align: center;
+  width: 50%;
+  margin: 1% auto;
+  text-align: center;
 }
 .list {
   width: 50%;      
