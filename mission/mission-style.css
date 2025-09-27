@@ -4,7 +4,7 @@ body{
     max-width: 600px;
     line-height: 1.5;
     border: 1px solid black;
-    padding: 3%;
+    padding: 5% 2%;
 }
 .content{
     max-width: 475px;
