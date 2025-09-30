@@ -1,0 +1,36 @@
+body {
+    font-family: "Roberto", sans-serif;
+}
+
+header, main, footer{
+    max-width: 640px;
+    margin: 1rem auto;
+    padding: 1em;
+    border: 1px solid #ccc;
+    background-color: lightskyblue;
+}
+
+Main{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+section{
+    background-color: white;
+    padding: 1em;
+}
+
+/* This code changes the grid to be horizontal if the screen width is over 500px */
+@media screen and (min-width: 500px) {
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    header, footer {
+        color: white;
+        background-color: dimgrey;
+    }
+}
+/* 1 em by default = 16 px, they multiply by the prev font, so an 1.5em in p = 1.5 * section font*/
