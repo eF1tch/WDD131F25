@@ -28,7 +28,7 @@ section{
         grid-template-columns: 1fr 1fr;
     }
     
-    header, footer {
+    header {
         color: white;
         background-color: dimgrey;
     }
