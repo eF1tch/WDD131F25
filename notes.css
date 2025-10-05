@@ -1,0 +1,12 @@
+/* This makes everything in the code  */
+* {
+    box-sizing: border-box;
+}
+/* This makes inages fill the area they are put in */
+img {
+    max-width: 100%;
+}
+/* This removes the body's margin */
+body{
+    margin:0
+}
