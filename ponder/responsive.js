@@ -14,4 +14,3 @@ function openMenu (){
     menu.classList.toggle("change");
     nav.classList.toggle("show")
 }
-// I need to change the Nav a css attribute from Display: none; to Display: clock; to show a stacked/styled nav
