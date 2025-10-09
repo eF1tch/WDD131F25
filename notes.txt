@@ -10,3 +10,10 @@ img {
 body{
     margin:0
 }
+
+Functions are an organizational tool, remember: DRY - Don't Repeat Yourself 
+
+For Javascript, there are 3 ways to declare functions:
+1. Function declaration: 
+
+Javascript 
