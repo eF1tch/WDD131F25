@@ -8,7 +8,7 @@ gallery.addEventListener('click', openModal);
 
 function openModal(e) {
     
-// Code to show modal  - Use event parameter 'e'
+// Code to show modal  - Use event parameter 'e' - Added notes to code to help learn
 
     if (e.target.tagName === 'IMG') { //checks if the element clicked was an image
 
