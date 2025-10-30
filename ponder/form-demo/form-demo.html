@@ -1,0 +1,83 @@
+<!-- form-demo.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="form-demo.css" />
+    <script src="form-demo.js" defer></script>
+  </head>
+  <body>
+    <header><h1>Checkout</h1></header>
+    <main>
+      <section class="errors"></section>
+      <form id="checkoutform" method="get" action="completed.html">
+        <!-- method = "post" would not post the inputs unto the url,possibly for more sensitive data-->
+        <p>
+        <label for ="name">Full Name</label>
+            <input 
+            id="name" 
+            name="name" 
+            type="text" 
+            placeholder="Enter your full name" 
+            required
+            />
+        </p>
+        <p>
+        <label for ="email">Email Address</label>
+            <input 
+            id="email" 
+            name="emaik" 
+            type="email" 
+            placeholder="Enter your Email Address" 
+            required
+            />
+        </p>
+        <label for ="Address">Address</label>
+            <textarea 
+            id="address" 
+            name="address" 
+            placeholder="Enter your address" 
+            required 
+            >
+        </textarea>
+        </p>
+        <p>
+            <label for="payment">Payment Type</label>
+            <select id="payment" name="payment">
+                <option value="">Choose One</option>
+                <option value="credit">Credit Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+        </p>
+        <p class="hide" id="creditCardContainer" >
+        <label for ="name">Credit Card Number</label>
+            <input 
+            id="creditcardnumber" 
+            name="creditcardnumber" 
+            type="text"
+            placeholder="Enter your credit card number" 
+            pattern="[0-9]{16}"
+            required
+            />
+        </p>
+        <p class="hide" id="paypalContainer">
+        <label for ="paypalname">PayPal Username</label>
+            <input 
+            id="paypalname" 
+            name="paypalname" 
+            type="text"
+            placeholder="Enter your PayPal Username" 
+            required
+            />
+        </p>
+        
+        <button type="submit">Submit</button>
+        <button type="reset">Cancel</button>
+        
+      </form>
+      <form id="checkoutForm" action="completed.html"></form>
+    </main>
+  </body>
+</html>
