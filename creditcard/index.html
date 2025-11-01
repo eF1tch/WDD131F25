@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ethan Fitch">
+    <meta name="description" content="Example of a credit card payment form">
+    <link rel="stylesheet" href="creditcard.css">
+    <link rel="icon" href="favicon-32x32.png">
+    <script src="creditcard.js" defer></script>
+    <title>Credit Card Form</title>
+</head>
+<body>
+    <form id="creditCardForm">
+        <div class="card-container">
+            <div class="card-front">
+                <p id="amount-container">
+                    <span id="amount">Total: <strong>$99</strong></span>
+                </p>
+                <img class="card-image" src="orangecard.svg" height="55px">
+                <p id="card-number-container">
+                    <label for="card-number">Card Number</label>
+                    <input
+                    id="card-number"
+                    type="text" 
+                    placeholder="1234 4321 6789 9876" 
+                    pattern="[0-9]{16}"
+                    required
+                    />
+                </p>
+                <p id="card-holder-container">
+                    <label for="card-holder">Card Holder</label>
+                    <input
+                    id="card-holder"
+                    type="text"
+                    placeholder="e.g. John Doe"
+                    required
+                    />
+                </p>
+                <div id="expiration-container">
+                <label for="card-month">Expiration</label>
+                <div class="expiration-fields">
+                    <input 
+                    id="card-month" 
+                    type="text" 
+                    placeholder="MM" 
+                    required
+                    length="2"
+                    />
+                    <input 
+                    id="card-year" 
+                    type="text" 
+                    placeholder="YY" 
+                    required 
+                    length="2"
+                    />
+                </div>
+                </div>
+            </div>
+            <div class="card-back">
+                <div id="magstripe"></div>
+                <p id="cvc-container">
+                    <label for="card-cvc">cvc/cvv</label>
+                    <input
+                    id="card-cvc"
+                    type="text"
+                    placeholder="xxx-x"
+                    required
+                    />
+                </p>
+            </div>
+        <button id="submit-btn" type="submit">Submit</button>    
+        </div>
+    </form> 
+</body>
+</html>
