@@ -6,8 +6,6 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
   logo.href = "images/recipe-book-dark-mode.png";
 }
 
-selectElem.addEventListener('change', changeTheme);
-
 function changeTheme() {
   const current = selectElem.value;
   if (current === 'dark') {
