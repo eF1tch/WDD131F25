@@ -17,3 +17,5 @@ For Javascript, there are 3 ways to declare functions:
 1. Function declaration: 
 
 Javascript 
+
+
