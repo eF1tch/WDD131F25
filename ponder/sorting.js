@@ -69,6 +69,8 @@ const hikes = [
 
 const simpleList = ["oranges", "grapes", "lemons", "apples", "Bananas", "watermelons", "coconuts", "broccoli", "mango"];
 
+// Activity 1: Sorting a list of strings
+
 const simpleSort = simpleList.sort();
  console.log(simpleSort)
 
@@ -89,6 +91,8 @@ console.log(anotherSort)
 // This makes a copy of the array by defining it as a new list
 const listCopy = [...simpleList];
 
+// Activity 2: Filtering a list of strings
+
 function searchList(list, query) {
 
     function searchCallback(item) {
@@ -104,8 +108,24 @@ function searchList(list, query) {
     console.log(filtered);
 }
 
-searchList(hikes, "teton");
+console.log(searchList(hikes, "teton"));
 
 // "&&" is "and" and "||" is "or"
 
-//Still need to add the capability to sort by length
+//Activity 3: Sorting and Filtering a list of objects.
+
+function searchList(list, q) {
+  function searchCallback(item) {
+    return (
+      item.name.toLowerCase().includes(q.toLowerCase()) ||
+      item.description.toLowerCase().includes(q.toLowerCase()) ||
+      item.tags.find((tag) => tag.toLowerCase().includes(q.toLowerCase()))
+    );
+  }
+  const filtered = list.filter(searchCallback);
+
+  const sorted = filtered.sort((a, b) => a.distance > b.distance);
+  return sorted;
+}
+
+console.log(searchList(hikes, "al"));
