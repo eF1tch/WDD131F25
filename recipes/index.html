@@ -13,7 +13,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <link id="favicon" rel="icon" href="images/recipe-book.png">
     <link rel="stylesheet" href="recipes.css">
-    <script src="main.js" defer></script>
+    <script type="module" src="main.js" defer></script>
     <title>RecipeBook</title>
 </head>
 <body>
@@ -38,28 +38,7 @@
                 </button>
             </div>
             <hr>
-            <section class="recipe-list" aria-label="Recipe List">
-                <img class="recipe-img" src="images/chicken-curry.webp" alt="Chicken Curry">
-                <div class="info-box">
-                    <ul class="tags">
-                        <li>Chicken</li>
-                        <li>Entrée</li>
-                        <li>Indian</li>
-                    </ul>
-                    <h2>Chicken Curry</h2>
-                    <span
-                        class="rating"
-                        role="img"
-                        aria-label="Rating: 4 out of 5 stars">
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star-empty">⭐</span>
-                        <span aria-hidden="true" class="icon-star-empty">☆</span>
-                    </span>
-                    <p class="hidden">Quick and easy Chicken curry recipe made with easy to find ingredients.</p>
-                </div>
-            </section>
+            <div id="recipes"></div>
         </main>
     </div>
     <footer>
